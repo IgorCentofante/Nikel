@@ -1,0 +1,132 @@
+:root {
+    --color-primary: rgb(76, 120, 211);
+    --color-secondary: rgb(255, 255, 255);
+    --color-tertiary: rgb(78, 0, 112);
+    --color-text: rgb(255, 255, 255);
+}
+
+#login {
+    background: linear-gradient(120deg, #4c78d3 44.9%, #ffffff 45%) no-repeat, fixed;
+}
+
+.text-login {
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.wallet-and-coins {
+    width: 38%;
+    transform: translateY(0px);
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.coins {
+    position: absolute;
+    bottom: -75px;
+}
+
+.btn-login {
+    width: 40%;
+    padding: 8px 0px;
+    align-items: center;
+    margin: 0% 30%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    letter-spacing: 1px;
+    color: var(--color-text);
+    background-color: var(--color-tertiary);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000056;
+    transition: 0.4s;
+}
+
+.btn-login:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    transition: 0.4s;
+    border-radius: 50px 10px;
+}
+
+.btn-default {
+    width: 20%;
+    padding: 7px 0px;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: 1px;
+    color: var(--color-text);
+    background-color: var(--color-tertiary);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000056;
+    transition: 0.4s;
+}
+
+.btn-default:hover {
+    background-color: rgb(51, 0, 73);
+    color: var(--color-text);
+    transition: 0.4s;
+}
+
+
+.link-default {
+    color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+.link-default:hover {
+    color: var(--color-primary);
+}
+
+.btn-register {
+    background-color: var(--color-tertiary);
+    color: var(--color-text)
+}
+
+.btn-register:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    transition: 0.4s;
+}
+
+.blue {
+    color: var(--color-primary);
+}
+
+/*Responsividade*/
+@media only screen and (max-width: 600px) {
+    #login {
+        background: var(--color-secundary);
+    }
+
+    .login {
+        justify-content: center;
+
+    }
+
+    .btn-default {
+        width: 35%;
+    }
+
+    .lancamentos {
+        font-size: 0.8em;
+    }
+}
+
+/*Animações*/
+@keyframes flutuar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

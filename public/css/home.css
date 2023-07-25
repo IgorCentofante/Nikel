@@ -1,0 +1,59 @@
+#app {
+  background: linear-gradient(120deg, #ffffff 44.9%, #4c78d3 45%) no-repeat, fixed;
+  min-height: 100vh;
+  height: auto;
+}
+
+header {
+  border-bottom: 1px solid #bebcbc;
+  background-color: var(--color-secundary);
+}
+
+.cash-icon {
+  color: var(--color-tertiary);
+  font-size: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.transactions {
+  margin-bottom: 10vh;
+}
+
+.info {
+  background-color: var(--color-secondary);
+  border-radius: 20px 20px 0px 0px;
+}
+
+.btn-float {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  padding: 0 !important;
+  bottom: 1rem;
+  right: 2rem;
+  font-size: 35px;
+  border: 2px solid var(--color-tertiary);
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
+}
+
+.btn-float:hover {
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
+  transition: 0.4s;
+}
+
+/*Responsividade*/
+@media only screen and (max-width: 600px) {
+  .info {
+    width: 90vw;
+    margin-left: 5vw;
+  }
+
+  .btn-default {
+    width: 30%;
+  }
+}
